@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-09-09 06:08:34 pm</div>
+    <div>2021-09-09 06:15:13 pm</div>
   </div>        
 </div>
 
@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>141</span>
+              <span>ms:</span>&nbsp;<span>111</span>
             </div>
           </div>
           
@@ -76,10 +76,10 @@
       <div class="step-ref failed">4</div>
       
       <div class="step-cell failed">
-        <span>*</span>&nbsp;<span>def ctr = karate.call(&#39;../../../../../karate-grpc-demo/src/test/java/abstraction/java-javacsript-functions-calls.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def ctr1 = karate.call(&#39;../../../../core-utilities/src/main/java/java-functions-calls.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell failed">141</div>
+    <div class="time-cell failed">111</div>
   </div>
 
    
@@ -88,23 +88,163 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">18:08:34.107 src/main/java/sample.feature:4
-* def ctr = karate.call(&#39;../../../../../karate-grpc-demo/src/test/java/abstraction/java-javacsript-functions-calls.feature&#39;)
+  <div class="preformatted" data-parent="0.4">18:15:13.220 src/main/java/sample.feature:4
+* def ctr1 = karate.call(&#39;../../../../core-utilities/src/main/java/java-functions-calls.feature&#39;)
 js failed:
 &gt;&gt;&gt;&gt;
-01: karate.call(&#39;../../../../../karate-grpc-demo/src/test/java/abstraction/java-javacsript-functions-calls.feature&#39;)
+01: karate.call(&#39;../../../../core-utilities/src/main/java/java-functions-calls.feature&#39;)
 &lt;&lt;&lt;&lt;
-org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /Users/bipinchaurasia/Documents/github/karate-automation/sample-automation/src/main/java/../../../../../karate-grpc-demo/src/test/java/abstraction/java-javacsript-functions-calls.feature (No such file or directory)
-- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
-- com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:70)
-- com.intuit.karate.core.Feature.read(Feature.java:67)
-- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
-- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: Java.type(&#39;utils.Utils&#39;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class utils.Utils is not allowed or does not exist.
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/main/java/../../../../core-utilities/src/main/java/java-functions-calls.feature:4
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:217)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2013)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1909)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:163)
 - com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
 - &lt;js&gt;.:program(Unnamed:1)
 
 src/main/java/sample.feature:4
 </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.main.java.core-utilities.src.main.java.java-functions-calls</div>
+      </div>
+      <div class="time-cell passed">9</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.4">
+      <div class="step-ref failed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def utils = Java.type(&#39;utils.Utils&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.4">18:15:13.217 src/main/java/../../../../core-utilities/src/main/java/java-functions-calls.feature:4
+* def utils = Java.type(&#39;utils.Utils&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: Java.type(&#39;utils.Utils&#39;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class utils.Utils is not allowed or does not exist.
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/main/java/../../../../core-utilities/src/main/java/java-functions-calls.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref skipped">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print utils.getCountFromJava()</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref skipped">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print utils.printHello()</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref skipped">5</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def ctr2 = call read(&#39;../../../../core-utilities/src/main/java/java-functions-calls.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
 
   
 
